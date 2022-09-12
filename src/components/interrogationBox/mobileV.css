@@ -1,0 +1,86 @@
+.container {
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #a9a5a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container .leftDiv {
+  -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+  margin-top: 35%;
+  margin-left: 20px;
+  float: left;
+  height: 40vh;
+  width: 50vw;
+  background-image: url("../../imgs/Conan -fococlipping-standard.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+  background-color: white;
+}
+
+.container .rightDiv {
+  -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+  margin-top: 85%;
+  margin-right: 20px;
+  float: right;
+  height: 40vh;
+  width: 50vw;
+  background-color: white;
+}
+
+.background {
+  overflow: hidden;
+  background-color: black;
+  padding-top: 20px;
+}
+
+.background .content {
+  position: relative;
+  background-color: red;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 100px 0 105px;
+  display: inline-block;
+}
+
+.background .content::after {
+  position: absolute;
+  right: -50px;
+  content: "";
+  border-bottom: 25px solid red;
+  border-left: 25px solid red;
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+@media all and (min-width: 500px) {
+  .container {
+    background-color: #a9a5a5;
+  }
+  .container .leftDiv {
+    background-size: 800px;
+    max-width: 350px;
+    height: 90vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .container .rightDiv {
+    max-width: 350px;
+    height: 90vh;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=mobileV.css.map */
